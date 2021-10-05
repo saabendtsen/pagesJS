@@ -1,9 +1,31 @@
 
 
-const data = { firstName: 'KRIST', lastName: "Larsen", phone:"3333333" };
+const data = {
+  firstName: "Post",
+  lastName: "Man",
+  address: {
+      street: "Postaddress",
+      additionalInfo: "is a place",
+      cityInfoDTO: {
+          zipcode: "3911",
+          city: "Sisimiut"
+      }
+  },
+  phones: [
+      {
+          number: 74921234,
+          description: "Jeg har en nokia"
+      }
+  ],
+  hobbies: [
+      {
+          name: "Bus spotting"
+      }
+  ]
+}
 
 
-fetch('http://localhost:8080/PersonExe_war_exploded/api/person', {
+fetch('https://manlyman69.rocks/CA1/api/person', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
